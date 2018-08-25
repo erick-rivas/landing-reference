@@ -1,0 +1,25 @@
+extends base
+  
+block content
+
+  #section0.section.single
+    .container
+      .box
+        h1 #{s0_title}
+        p.call-to-action
+          input#name(type='text', placeholder=s0_input1)
+          input#email(type='email', placeholder=s0_input2)
+          input#message(type='text', placeholder=s0_input3)
+          a#send-form #{s0_call}
+
+block ids
+  script.
+    var _pageName = "contact";
+    
+block styles
+  include ../public/styles/css/default.css
+  include ../public/styles/css/default-content.css
+  include ../public/styles/css/contact.css
+
+block scripts
+  include ../public/scripts/contact.js

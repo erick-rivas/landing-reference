@@ -1,0 +1,22 @@
+@import "util.scss";
+/**
+* Nav
+* ------------------------------ */
+
+#nav-support {
+  padding-bottom: 0.42em !important;
+  border-bottom: solid 0.17em $primary-color;
+}
+
+@media (max-width: 481px) {
+  #nav-support {
+    padding-bottom: 0.37em !important;
+    border-bottom: none;
+    background: $primary-color;
+  }
+}
+
+#faqs li,
+#how-to li {
+  margin-bottom: 1.5em;
+}

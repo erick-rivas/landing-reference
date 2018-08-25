@@ -1,0 +1,132 @@
+extends base
+
+block content
+
+  #section0.section.single
+    .container
+      .box
+        h1 !{s0_title}
+        p !{s0_sub}
+        .call-to-action
+          input(type='email', placeholder=s0_call1)
+          a.send-form
+            | !{s0_call2}
+    canvas#canvas-anim
+
+
+  #section1a.section.single
+    .container
+      .box
+        h2 !{s1_title}
+        p !{s1_sub}
+          
+
+  #section1.section.single
+    .container
+      .box
+        .grid
+          .row
+            #col11.col
+              .cell
+                img.image(src='/images/'+s11_img)
+                br
+                span.title !{s11_title}
+            #col12.col
+              .cell
+                img.image(src='/images/'+s12_img)
+                br
+                span.title !{s12_title}
+            #col13.col
+              .cell
+                img.image(src='/images/'+s13_img)
+                br
+                span.title !{s13_title}
+
+
+  #section2a.section.single
+    .container
+      .box
+        h2 
+          span !{s2a_title}
+
+
+  #section21.section.section-step
+    .container
+      .box
+        .step 1
+        h3 !{s21_title}
+        p !{s21_sub}
+      img.image(src='/images/'+s21_img)
+        
+  #section22.section.right.section-step
+    .container
+      .box
+        .step 2
+        h3 !{s22_title}
+        p !{s22_sub}
+      img.image(src='/images/'+s22_img) 
+
+  #section23.section.section-step
+    .container
+      .box
+        .step 3
+        h3 !{s23_title}
+        p !{s23_sub}
+      img.image(src='/images/'+s23_img)
+       
+  #section24.section.right.section-step
+    .container
+      .box
+        .step 4
+        h3 !{s24_title}
+        p !{s24_sub}
+      img.image(src='/images/'+s24_img)
+
+  #section3.section.single
+    .container
+      .box
+        h2 !{s4_title}
+        .grid
+          .row
+            .col
+              #cell31.cell
+                .image
+                  img(src='/images/'+s41_img)
+                br
+                span.title !{s41_title}
+                br
+                span.sub !{s41_sub}
+            .col
+              #cell32.cell
+                .image
+                  img(src='/images/'+s42_img)
+                br
+                span.title !{s42_title}
+                br
+                span.sub !{s42_sub}
+            .col
+              #cell33.cell
+                .image
+                  img(src='/images/'+s43_img)
+                br
+                span.title !{s43_title}
+                br
+                span.sub !{s43_sub}
+
+  include layout/apply
+  
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel='stylesheet')
+
+block ids
+  script.
+    var _pageName = "main";
+
+block styles
+  include ../public/styles/css/default.css
+  include ../public/styles/css/main.css
+
+block scripts
+  include ../public/scripts/main-anim.js
+  include ../public/scripts/connect-anim.js
+  

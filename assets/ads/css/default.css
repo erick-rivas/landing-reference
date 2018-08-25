@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+}
+
+#container {
+  background: #3A5570;
+  font-family: Quicksand, Arial;
+}
+
+#message {
+  position: absolute;
+  color: #fff;
+}
+
+#image {
+  position: absolute;
+}
+
+#call-to-action {
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  position: absolute;
+  border: 2px solid;
+  border-radius: 0.2em;
+  border-color: #F0B540;
+  background: none repeat scroll 0 0;
+  background-color: #F0B540;
+  color: white;
+  font-family: Verdana, Arial;
+  line-height: 1.15em;
+  text-decoration: none;
+  box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+#call-to-action:hover {
+  border-color: #F7B740;
+  background-color: #F7B740;
+}

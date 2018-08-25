@@ -1,0 +1,495 @@
+@import "util.scss";
+/**
+* Nav
+* ------------------------------ */
+
+#nav-bar {
+  border: none;
+  background: none;
+}
+
+#nav-bar #logo {
+  left: 0em;
+  width: 8.93em;
+  height: 2.65em;
+  margin-top: 1.5em;
+  margin-left: 0.65em;
+  margin-left: 1.6em;
+  padding-top: 0.6em;
+  padding-right: 1.7em;
+  padding-bottom: 0.6em;
+  padding-left: 1.5em;
+  background-image: url(/images/linkbox-logo-white.png);
+  background-size: 8.93em 2.65em;
+}
+
+@media (max-width: 481px) {
+  #nav-bar #logo {
+    width: 7.41em;
+    height: 2.2em;
+    margin-top: 1.1em;
+    margin-left: 0.1em;
+    background-size: 7.41em 2.2em;
+  }
+}
+
+#content {
+  padding-top: 0em;
+}
+
+/**
+* Section 0
+* ------------------------------ */
+
+#section0 {
+  z-index: 1;
+  padding-top: 9.4em;
+  padding-bottom: 6em;
+  color: white;
+  @include gradient(#1595D5, #30B7E2);
+}
+
+#section0 .box {
+  text-align: center;
+  width: 52em;
+  margin-right: 3em;
+  margin-left: 3em;
+}
+
+#section0 #canvas-anim {
+  position: absolute;
+  left: 0em;
+  top: 0em;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#section0 h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 4.25em;
+  line-height: 1.2em;
+}
+
+#section0 h1:lang(es) {
+  font-size: 4.17em;
+}
+
+#section0 p {
+  margin-top: 1.35em;
+  margin-bottom: 1.7em;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.68em;
+  line-height: 1.5em;
+}
+
+#section0 .call-to-action input {
+  width: 16em;
+}
+
+#section0 .call-to-action a {
+  width: 9.5em;
+  margin-left: 0.3em;
+}
+
+@media (max-width: 769px) {
+  #section0 {
+    padding-top: 9.5em;
+    padding-bottom: 7em;
+  }
+  #section0 .box {
+    width: 37em;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+  #section0 h1 {
+    font-size: 3.6em;
+    line-height: 1.2em;
+  }
+  #section0 h1:lang(es) {
+    font-size: 3.4em;
+  }
+  #section0 p {
+    font-size: 1.6em;
+  }
+  #section0 .call-to-action input,
+  #section0 .call-to-action a {
+    width: 19em;
+  }
+}
+
+@media (max-width: 481px) {
+  #section0 {
+    padding-top: 6.4em;
+    padding-bottom: 2.1em;
+  }
+  #section0 .box {
+    width: 19em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  #section0 h1 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+  }
+  #section0 h1:lang(es) {
+    font-size: 2.2em;
+  }
+  #section0 p {
+    margin-top: 1.2em;
+    margin-bottom: 1.8em;
+    font-size: 1.1em;
+  }
+  #section0 .call-to-action a,
+  #section0 .call-to-action input {
+    width: 13.5em;
+  }
+  #section0 .call-to-action a {
+    margin-left: 0em;
+  }
+}
+
+/**
+* Section1a
+* ------------------------------ */
+
+#section1a {
+  background: #fff;
+  padding-top: 4.5em;
+  padding-bottom: 5em;
+}
+
+#section1a h2 {
+  margin-top: 1em;
+  line-height: 1.3em;
+  color: $primary-color;
+}
+
+#section1a .box {
+  text-align: center;
+  width: 52em;
+  margin-right: 3em;
+  margin-left: 3em;
+}
+
+@media (max-width: 769px) {
+  #section1a {
+    padding-top: 4em;
+    padding-bottom: 4.5em;
+  }
+  #section1a .box {
+    width: 37em;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+}
+
+@media (max-width: 481px) {
+  #section1a {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  #section1a .box {
+    width: 19em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+/**
+* Section1
+* ------------------------------ */
+
+#section1 {
+  padding-top: 1em;
+  padding-bottom: 3em;
+  border-style: solid;
+  border-width: 1px 0px;
+  background-color: #fdfdfd;
+  border-color: #dbdbdb;
+  z-index: 4;
+}
+
+#section1 .box {
+  text-align: center;
+}
+
+#section1 .title {
+  color: #909090;
+  font-weight: normal;
+}
+
+#section1 #col12 {
+  border-style: solid;
+  border-width: 0px 1px;
+  border-color: #e2e2e2;
+}
+
+@media (max-width: 481px) {
+  #section1 {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    border-width: 0px 0px;
+  }
+  #section1 .col,
+  #section1 #col12 {
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: #e5e5e5;
+    background: #fff;
+    margin-bottom: 1.5em;
+    padding-bottom: 2em;
+    padding-top: 2.7em;
+    font-size: 0.94em;
+    @include border-radius(0.7em);
+  }
+}
+
+/**
+* Section2a
+* ------------------------------ */
+
+#section2a {
+  background: #fff;
+  padding-top: 7em;
+  padding-bottom: 1.5em;
+}
+
+#section2a h2 {
+  color: $primary-color;
+  text-align: center;
+  padding: 0.5em 0em;
+}
+
+#section2a h2 span {
+  font-size: 1.1em;
+}
+
+@media (max-width: 481px) {
+  #section2a {
+    padding-top: 4em;
+    padding-bottom: 1em;
+  }
+  #section2a h2 span {
+    font-size: 1.1em;
+  }
+}
+
+/**
+* Section-step
+* ------------------------------ */
+
+.section-step {
+  background: #fff;
+  padding-bottom: 1.7em;
+}
+
+.section-step .step {
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: bold;
+  width: 2.2em;
+  height: 2.2em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
+  @include border-radius(50%);
+}
+
+.section-step .image {
+  margin-top: 3.2em;
+  visibility: hidden;
+}
+
+.section-step h2 {
+  margin-top: 1em;
+}
+
+@media (max-width: 769px) {
+  .section-step {
+    background: #fff;
+    padding-bottom: 0em;
+  }
+  .section-step .step {
+    font-size: 1.7em;
+  }
+  .section-step .image {
+    margin-top: 2.5em;
+  }
+}
+
+@media (max-width: 481px) {
+  .section-step .step {
+    font-size: 1.5em;
+  }
+  .section-step .image {
+    margin-top: 0em;
+  }
+}
+
+/**
+* Section 21
+* ------------------------------ */
+
+#section21 {
+  padding-top: 0em;
+}
+
+#section21 .step {
+  background-color: #F7C020;
+}
+
+#section21 h3 {
+  color: #F7C020;
+}
+
+/**
+* Section 22
+* ------------------------------ */
+
+#section22 .step {
+  background-color: #75c050;
+}
+
+#section22 h3 {
+  color: #75c050;
+}
+
+/**
+* Section 23
+* ------------------------------ */
+
+#section23 .step {
+  background-color: #50a0d5;
+}
+
+#section23 h3 {
+  color: #50a0d5;
+}
+
+#section23 .box {
+  width: 23em;
+}
+
+#section23 .image {
+  width: 26em;
+  margin-top: 6em;
+}
+
+@media (max-width: 769px) {
+  #section23 .box {
+    width: 17em;
+  }
+  #section23 .image {
+    width: 21em;
+    margin-top: 4.5em;
+  }
+}
+
+@media (max-width: 481px) {
+  #section23 .box {
+    width: 19em;
+  }
+  #section23 .image {
+    width: 19em;
+    margin-top: 0em;
+  }
+}
+
+/**
+* Section 24
+* ------------------------------ */
+
+#section24 {
+  padding-bottom: 12em;
+}
+
+#section24 .step {
+  background-color: #5075b5;
+}
+
+#section24 h3 {
+  color: #5075b5;
+}
+
+@media (max-width: 769px) {
+  #section24 {
+    padding-bottom: 9em;
+  }
+}
+
+@media (max-width: 481px) {
+  #section24 {
+    padding-bottom: 7em;
+  }
+}
+/**
+* Section 3
+* ------------------------------ */
+
+#section3 {
+  padding-top: 4.7em;
+  padding-bottom: 2.5em;
+  @include gradient(#1595D5, #30B7E2);
+}
+
+#section3 h2 {
+  color: #fff;
+}
+
+#section3 .box {
+  text-align: center;
+}
+
+#section3 .grid {
+  padding-top: 0.7em;
+}
+
+#section3 .grid .image {
+  display: inline-block;
+  width: 4.7em;
+  height: 4.7em;
+  padding: 1.6em;
+  float: none;
+  background-color: #fff;
+  @include border-radius(50%);
+  @include box-shadow(0.1em, 0.1em, 0.5em, rgba(255, 255, 255, 0.25));
+}
+
+#section3 .grid .title {
+  font-weight: bold;
+  color: #fff;
+}
+
+#section3 .grid .sub {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 769px) {
+  #section3 {
+    padding-top: 3.5em;
+    padding-bottom: 2.5em;
+  }
+}
+
+@media (max-width: 481px) {
+  #section3 {
+    padding-top: 4em;
+    padding-bottom: 2em;
+  }
+  #section3 .grid {
+    padding-top: 1.5em;
+  }
+  #section3 .grid .image {
+    display: inline-block;
+    width: 3.7em;
+    height: 3.7em;
+    padding: 1.3em;
+    float: none;
+  }
+  #section3 h2 {
+    margin-bottom: 0.4em;
+  }
+}

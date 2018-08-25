@@ -1,0 +1,46 @@
+#container {
+  width: 300px;
+  height: 600px;
+}
+
+#message {
+  top: 17px;
+  left: 32px;
+  width: 230px;
+  text-align: center;
+}
+
+#message h1 {
+  font-size: 2.5em;
+  line-height: 1em;
+  text-align: center;
+}
+
+#message h1 a {
+  display: inline-block;
+  margin-top: 0px;
+  font-size: 1.05em;
+}
+
+#message #content {
+  margin-top: -7px;
+  font-size: 1.1em;
+  line-height: 1.18em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#image {
+  top: 240px;
+  left: 48px;
+  width: 210px;
+}
+
+#call-to-action {
+  top: 510px;
+  left: 75px;
+  width: 150px;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  font-size: 1.25em;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+#container {
+  width: 728px;
+  height: 90px;
+}
+
+#message {
+  top: 0px;
+  margin-top: -2px;
+  left: 20px;
+  width: 600px;
+}
+
+#message h1 {
+  font-size: 1.58em;
+  font-weight: normal;
+}
+
+#message h1 a {
+  font-size: 1em;
+}
+
+#message #content {
+  position: absolute;
+  top: 35px;
+  font-size: 1.07em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#image {
+  top: 3px;
+  left: 475px;
+  width: 75px;
+}
+
+#call-to-action {
+  top: 26px;
+  left: 575px;
+  padding: 0.4em 0.6em;
+  font-size: 1.1em;
+}

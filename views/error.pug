@@ -1,0 +1,19 @@
+extends base
+
+block content
+  
+  #section0.section.single
+    .container
+      .box
+        h1 #{message} 
+        br
+        | #{error.stack}
+
+  
+block ids
+  script.
+    var _pageName = "privacy";
+    
+block styles
+  include ../public/styles/css/default.css
+  include ../public/styles/css/default-content.css

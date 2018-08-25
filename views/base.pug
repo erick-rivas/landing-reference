@@ -1,0 +1,63 @@
+doctype html
+html(lang=lang)
+  head
+    title #{header_title}
+    link(href=url+'/images/favicon.ico', rel='shortcut icon')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='theme-color', content='#ffffff')
+    // Title
+    meta(itemprop='name', content=header_title)
+    meta(property='og:title', content=header_title)
+    meta(name='twitter:title', content=header_title)
+    meta(property='og:type', content='website')
+    // URL
+    link(href=url, itemprop='url')
+    meta(property='og:url', content=url)
+    // Description
+    meta(name='description', content=header_description)
+    meta(itemprop='description', content=header_description)
+    meta(name='twitter:description', content=header_description)
+    meta(property='og:description', content=header_description)
+    // Author
+    meta(property='author', content=author)
+    // Image
+    meta(itemprop='image', content=url+'/images/thumbnail.png')
+    meta(property='og:image', content=url+'/images/thumbnail.png')
+    meta(name='twitter:image', content=url+'/images/thumbnail.png')
+    meta(name='twitter:image:src', content=url+'/images/thumbnail.png')
+    link(href=url+'/images/thumbnail.png', itemprop='thumbnailUrl')
+    style
+      block styles //
+      
+  body
+    #nav-bar
+      a(href='/')
+        #logo
+      
+    #content      
+      block content
+
+    #footer
+      | #{made_mexico}
+      br
+      div
+        a(href='/terms/') #{terms} |   
+        a(href='/privacy/') #{privacy} |  
+        a(href='/contact/') #{contact}
+
+    #snackbar
+    
+    block ids
+    script(src='https://www.googletagmanager.com/gtag/js?id=AW-829814233', async='')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    
+    script.
+      var form_sent = "#{form_sent}";
+      var form_notice = "#{form_notice}"
+      var invalid_email = "#{invalid_email}";
+    script
+      include ../public/scripts/general.js
+      include ../public/scripts/waypoints.js
+      block scripts

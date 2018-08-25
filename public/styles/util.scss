@@ -1,0 +1,37 @@
+$dark-color: #029ad0;
+$primary-color: #00a7dF;
+$primary-light: #e6f5fc;
+$secondary-color: #a0a0a0;
+$accent-color: #f0c040;
+$action-color: #f03296;
+$completed-color: #92D050;
+$delayed-color: #ffb070;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin align-horizontal($width) {
+  left: 50%;
+  margin-left: -$width/2;
+}
+
+@mixin align-vertical($width) {
+  top: 50%;
+  margin-top: -$width/2;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $left $top $blur $color;
+  -moz-box-shadow: $left $top $blur $color;
+  box-shadow: $left $top $blur $color;
+}
+
+@mixin gradient($start, $end) {
+  background: $start;
+  background: -webkit-linear-gradient($start, $end);
+  background: -moz-linear-gradient($start, $end);
+  background: linear-gradient($start, $end);
+}
