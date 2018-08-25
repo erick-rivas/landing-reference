@@ -1,12 +1,12 @@
 var express = require('express');
-var langMid = require('../middleware/lang.js');
+var langMid = require('./middleware/lang.js');
 
-var commons = require('../locale/commons.js')
-var main = require('../locale/main.js');
-var support = require('../locale/support.js');
-var contact = require('../locale/contact.js');
-var terms = require('../locale/terms.js');
-var privacy = require('../locale/privacy.js');
+var commons = require('./locale/commons.js')
+var main = require('./locale/main.js');
+var support = require('./locale/support.js');
+var contact = require('./locale/contact.js');
+var terms = require('./locale/terms.js');
+var privacy = require('./locale/privacy.js');
 
 var router = express.Router();
 
