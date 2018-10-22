@@ -1,6 +1,6 @@
 # Node.js Landing
 
-This repository holds the source code of a **template** for the development of a **Node.js landing** written mainly in javascript, pug and scss.
+This repository holds the source code of a **reference** for the development of a **Node.js landing** written mainly in javascript, pug and scss.
 
 ## Architecture design
 
@@ -23,6 +23,12 @@ For handle common server actions, the templates use the following structure:
 ### Assets ###
   - /public: Resources that are public via  *e.g profile_image.png, doc.pdf*.
   > Note: For the management of styles, the project use .scss so ignore the css folder.
+
+### Configuration ###
+  - app.ts: Handle server initialization & configuration.
+  - routes.ts: Handle the endpoints definition.
+  - gulpfile.js: Handle the compression settings of production assets. 
+  - export.sh: Aux bash to export server files to minimalist html.
 
 ## Pre-requisites:
 
