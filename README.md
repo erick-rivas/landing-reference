@@ -5,7 +5,7 @@ This repository holds the source code of a **reference** for the development of 
 ## Architecture design
 
 ### Overview ### 
-For handle common server actions, the templates use the following structure:
+For handle common server actions, the reference use the following structure:
   - /locale: Website content.
   - /middlewares: Server middlewares.
   - /public: Public resources such as scripts, images and files.

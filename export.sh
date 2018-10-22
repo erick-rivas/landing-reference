@@ -41,15 +41,15 @@ mkdir -p build/html/lang/es/privacy
 mkdir -p build/html/lang/es/terms
 mkdir -p build/html/lang/es/contact
 
-curl http://localhost:5000/ -o build/html/index.html
-curl http://localhost:5000/privacy/ -o build/html/privacy/index.html
-curl http://localhost:5000/terms/ -o build/html/terms/index.html
-curl http://localhost:5000/contact/ -o build/html/contact/index.html
+curl http://localhost:5005/ -o build/html/index.html
+curl http://localhost:5005/privacy/ -o build/html/privacy/index.html
+curl http://localhost:5005/terms/ -o build/html/terms/index.html
+curl http://localhost:5005/contact/ -o build/html/contact/index.html
 
-curl http://localhost:5000/lang/es/ -o build/html/lang/es/index.html 
-curl http://localhost:5000/lang/es/privacy/ -o build/html/lang/es/privacy/index.html 
-curl http://localhost:5000/lang/es/terms/ -o build/html/lang/es/terms/index.html 
-curl http://localhost:5000/lang/es/contact/ -o build/html/lang/es/contact/index.html 
+curl http://localhost:5005/lang/es/ -o build/html/lang/es/index.html 
+curl http://localhost:5005/lang/es/privacy/ -o build/html/lang/es/privacy/index.html 
+curl http://localhost:5005/lang/es/terms/ -o build/html/lang/es/terms/index.html 
+curl http://localhost:5005/lang/es/contact/ -o build/html/lang/es/contact/index.html 
 
 export NODE_ENV=development
 

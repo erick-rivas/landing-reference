@@ -1,11 +1,5 @@
 var commons = require('./commons.js');
 
-//Inspiration
-// coophi.com
-// assistant.to
-// x.ai
-// freebusy.io
-
 function getData(lang)
 {
   if (lang == "es")
