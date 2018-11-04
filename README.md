@@ -42,12 +42,34 @@ For handle common server actions, the reference use the following structure:
  ```bash
  $ npm install
  ```
- * Run server.
+ * Run server
  ```bash
 $ npm start
+ ```
+ * Watch server
+ ```bash
+$ npm run-script watch
  ```
   > When the command is executed, any change on code is automatically updated and built (including scss). So it is not necessary to restart server.
  * Open in browser.
  ```bash
 $ http://localhost:5005
  ```
+
+ ### To deploy to server (aws):
+
+* Install eb and configure credentials, See ([install](https://docs.aws.amazon.com/es_es/elasticbeanstalk/latest/dg/eb-cli3-install.html) & [credentials](https://docs.aws.amazon.com/es_es/general/latest/gr/managing-aws-access-keys.html))
+
+* Init eb project
+```bash
+$ eb init
+ ```
+ > This command will create a .elasticbeanstalk/config.yml file which can be modified to set env, zone, platform, etc.
+
+ * Check the .ebextensions/nodecommand.config file to configure deployment commands.
+
+ * Deploy to aws
+```bash
+$ eb deploy
+ ```
+ > Before deploy COMMIT the last changes because eb only consider the last changes.
