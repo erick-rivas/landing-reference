@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Check [reactjs web reference](https://github.com/erick-rivas/reactjs-web-reference)
+
 # Node.js Landing
 
 This repository holds the source code of a **reference** for the development of a **Node.js landing** written mainly in javascript, pug and scss.
