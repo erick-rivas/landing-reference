@@ -1,8 +1,4 @@
-# DEPRECATED
-
-Check [reactjs web reference](https://github.com/erick-rivas/reactjs-web-reference)
-
-# Node.js Landing
+# Landing Reference
 
 This repository holds the source code of a **reference** for the development of a **Node.js landing** written mainly in javascript, pug and scss.
 
@@ -60,20 +56,6 @@ $ npm run-script watch
 $ http://localhost:5005
  ```
 
- ### To deploy to server (aws):
+## Deployment
 
-* Install eb and configure credentials, See ([install](https://docs.aws.amazon.com/es_es/elasticbeanstalk/latest/dg/eb-cli3-install.html) & [credentials](https://docs.aws.amazon.com/es_es/general/latest/gr/managing-aws-access-keys.html))
-
-* Init eb project
-```bash
-$ eb init
- ```
- > This command will create a .elasticbeanstalk/config.yml file which can be modified to set env, zone, platform, etc.
-
- * Check the .ebextensions/nodecommand.config file to configure deployment commands.
-
- * Deploy to aws
-```bash
-$ eb deploy
- ```
- > Before deploy COMMIT the last changes because eb only consider the last changes.
+-   To deploy application to aws see [deployment](./bin/deployment.md).
